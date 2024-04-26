@@ -10,7 +10,7 @@ type ProfilerOptionsType struct {
 	FilterStdDevs int           `long:"filterstddevs" default:"-1"`
 	FixedBound    bool          `long:"fixedbound"`
 	PeriodSize    string        `long:"periodsize" default:"" description:"comma separated list of ints, specifies descrete states per period"`
-	OutputFreq    time.Duration `long:"outputFreq" default:"60"`
+	OutputFreq    time.Duration `string:"outputFreq" default:"60s"`
 
 	PeriodSizeParsed []int
 }
